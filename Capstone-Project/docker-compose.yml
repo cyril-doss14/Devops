@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: myapp:latest
+    container_name: myapp-container
+    ports:
+      - "80:80"
+    restart: unless-stopped
